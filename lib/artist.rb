@@ -37,10 +37,6 @@ class Artist
   end
 
   def genres(song)
-    newarr = []
-    songs.each do |song|
-      newarr << song.genre
-    end
-    newarr.uniq
+    if !@genre_array.include?(song.genre)
   end
 end
