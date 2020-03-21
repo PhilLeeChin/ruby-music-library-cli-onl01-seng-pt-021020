@@ -51,6 +51,9 @@ class Song
   # end
 
   def self.new_from_filename(title)
-    song_name = self.new
+    artist, song, genre = name.spit(' - ')
+    artist = Artist.find_or_create_by_name(artist)
+    genre = Genre.find_or_create_by_name(genre)
+    new(song, artist, genre)
   end
 end
