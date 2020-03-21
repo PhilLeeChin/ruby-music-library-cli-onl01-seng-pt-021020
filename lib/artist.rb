@@ -35,4 +35,8 @@ class Artist
       self.songs << song
     end
   end
+
+  def genres
+
+  end
 end
