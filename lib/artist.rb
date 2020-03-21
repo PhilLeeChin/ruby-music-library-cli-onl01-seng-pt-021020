@@ -35,8 +35,4 @@ class Artist
       self.songs << song
     end
   end
-
-  def genres(song)
-    if !@genre_array.include?(song.genre)
-  end
 end
